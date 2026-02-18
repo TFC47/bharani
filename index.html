@@ -10,61 +10,58 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
     }
     body {
-      background: #0f172a;
-      color: #f1f5f9;
+      background: #000000;
+      color: #00ffff;
       line-height: 1.6;
+      font-family: Arial, sans-serif;
     }
     header {
       padding: 40px 20px;
-      background: linear-gradient(135deg, #1e293b, #0f172a);
+      background:linear-gradient(135deg, #00ffff, #00d9ff, #00c3ff, #6999ff, #a268ff, #6f00ff);
+      border: 4px solid #6f00ff;
+      font-family: Copperplate Gothic, sans-serif;
+      font-weight: bold;
     }
     .header-content {
       display: flex;
       align-items: center;
-      gap: 20px; /* space between logo and text */
+      gap: 20px;
     }
     .logo {
-      width: 150px;           /* adjust size as needed */
+      width: 150px;           
       height: 150px;
-      border-radius: 50%;    /* makes it circular */
-      object-fit: cover;     /* fill circle properly */
+      border-radius: 50%;    
+      border: 4px solid #6f00ff;
+      object-fit: cover;
     }
     .header-text h1 {
       font-size: 2.5rem;
-      color: #38bdf8;
+      color: #000000;
       margin-bottom: 5px;
     }
     .header-text p {
       margin: 0 0 15px 0;
       font-size: 1.2rem;
-      color: #94a3b8;
+      color: #000000;
     }
-    .header-text .cta a {
+    .header-text .cta a{
       text-decoration: none;
-      background: #38bdf8;
-      color: #0f172a;
+      background: #000000;
+      color: #ffd700;
       padding: 12px 25px;
-      border-radius: 8px;
+      border: 3px solid #000000;
+      border-radius: 10px;
       font-weight: bold;
     }
-    header p {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      color: #94a3b8;
+    .header-text .cta a:hover {
+      background: linear-gradient(135deg, #00ffff, #00d9ff, #00c3ff, #6999ff, #a268ff, #6f00ff);
+      color: #000000;
+      border: 3px solid #000000;
     }
     header .cta {
       margin-top: 20px;
-    }
-    header .cta a {
-      text-decoration: none;
-      background: #38bdf8;
-      color: #0f172a;
-      padding: 12px 25px;
-      border-radius: 8px;
-      font-weight: bold;
     }
     section {
       padding: 60px 20px;
@@ -74,8 +71,8 @@
     section h2 {
       font-size: 2rem;
       margin-bottom: 20px;
-      color: #38bdf8;
-      border-bottom: 2px solid #38bdf8;
+      color: #ffd700;
+      border-bottom: 2px solid #ffd700;
       display: inline-block;
     }
     .skills ul {
@@ -86,36 +83,46 @@
       margin-top: 20px;
     }
     .skills li {
-      background: #1e293b;
+      color:#000000;
+      background: linear-gradient(135deg, #00ffff, #00d9ff, #00c3ff, #6999ff, #a268ff, #6f00ff);
       padding: 15px;
       text-align: center;
       border-radius: 8px;
+      font-weight: bold;
+      border: 3px solid #6f00ff;
+      font-family: Copperplate Gothic, sans-serif;
     }
     .projects .card {
-      background: #1e293b;
+      color:#000000;
+      background: linear-gradient(135deg, #00ffff, #00d9ff, #00c3ff, #6999ff, #a268ff, #6f00ff);
       padding: 20px;
       border-radius: 8px;
       margin-top: 20px;
+      font-weight: bold;
+      border: 3px solid #6f00ff;
     }
     footer {
       text-align: center;
       padding: 30px;
-      background: #1e293b;
-      color: #94a3b8;
+      background: linear-gradient(135deg, #00ffff, #00d9ff, #00c3ff, #6999ff, #a268ff, #6f00ff);
+      border: 4px solid #6f00ff;
+      color: #000000;
+      font-weight: bold;
+      font-family: Copperplate Gothic, sans-serif;
     }
     footer a {
-      color: #38bdf8;
+      color: #ff0000;
       text-decoration: none;
       margin: 0 10px;
     }
     .contact-icons a {
      margin: 0 10px;
      font-size: 30px;
-     color: #333;
+     color: #00ffff;
      transition: color 0.3s;
     }
     .contact-icons a:hover {
-     color: #ff0000; /* or Instagram/YouTube brand colors */
+     color: #ff0077;
     }
   </style>
 </head>
@@ -123,10 +130,10 @@
 
 <header class="header">
   <div class="header-content">
-    <img src="logo$.jpg" alt="Logo" class="logo">
+    <img src="C:\Users\Personal Computer\OneDrive\Desktop\Bharani portfolio\Pictures\logo$.jpg" alt="Logo" class="logo">
     <div class="header-text">
       <h1>Bharani B</h1>
-      <p>Web Developer | Game Developer | AI Enthusiast | Entrepreneur</p>
+      <p>Web Developer | Full-stack Developer | AI Developer | Entrepreneur</p>
       <div class="cta">
         <a href="#contact">Work With Me</a>
       </div>
@@ -134,7 +141,6 @@
   </div>
 </header>
 
-  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>
@@ -146,7 +152,6 @@
     </p>
   </section>
 
-  <!-- Mission Section -->
   <section id="mission">
     <h2>My Mission</h2>
     <p>
@@ -155,54 +160,61 @@
     </p>
   </section>
 
-  <!-- Skills Section -->
   <section class="skills" id="skills">
     <h2>My Skills</h2>
     <ul>
       <li>C</li>
       <li>C++</li>
+      <li>C#</li>
       <li>Java</li>
       <li>Python</li>
-      <li>Game Development</li>
       <li>HTML</li>
       <li>CSS</li>
-      <li>JavaScript</li>
+      <li>JS</li>
+      <li>MongoDB</li>
+      <li>Node.Js</li>
+      <li>SQL</li>
+      <li>Angular</li>
     </ul>
     <p style="margin-top:20px;">
-      📜 <a href="certificates.html" style="color:#38bdf8;">See All Certificates (50+)</a>
+      📜 <a href="certificates.html" style="color:#ffd700;">See All Certificates (80+)</a>
     </p>
   </section>
 
-  <!-- Projects Section -->
   <section class="projects" id="projects">
     <h2>Projects</h2>
+
     <div class="card">
       <h3>Portfolio Website</h3>
       <p>This portfolio itself is my first project.</p>
     </div>
+
     <div class="card">
       <h3>Auditronix 2K25</h3>
-      <p>A culturals event website for St.Thomas college. You can visit here <a href="https://auditronix.vercel.app" style="color:#38bdf8;">Auditronix2K25</a> </p>
+      <p>A Responsive cultural event website for of St.Thomas college. You can visit the web here <a href="https://auditronix.vercel.app" style="color:#454545;">Auditronix2K25</a> </p>
     </div>
+
+    <div class="card">
+      <h3>Ultro-Posters</h3>
+      <p>An E-Commerce website store for selling wallposters. You can visit the web here <a href="https://ultro-posters.vercel.app" style="color:#454545;">Ultro-Posters</a> </p>
+    </div>
+
   </section>
 
-  <!-- Extra Placeholder -->
   <section id="extra">
     <h2>More Coming Soon</h2>
     <p>Stay tuned for services, blog, and client testimonials.</p>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me</h2>
       <div class="contact-icons">
         <a href="mailto:bharani47officialgmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.instagram.com/limitlessdragons?igsh=Mm16ZjQ0dTNjdGUx" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/rei_kurogami?utm_source=qr&igsh=MXdxeWV6OGh1bDBhZQ==" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://youtube.com/@limitlessdragonsofficial?si=rcehXGAPu3s1L0_V" target="_blank"><i class="fab fa-youtube"></i></a>
       </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2025 Bharani B | Limitless Portfolio</p>
     <p>
@@ -213,6 +225,4 @@
   </footer>
 
 </body>
-
 </html>
-
